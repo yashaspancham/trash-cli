@@ -11,17 +11,9 @@ else
 fi
 
 
-if command -v zip &> /dev/null;
-then
-    echo "zip is installed."
-else
-    echo "zip is not present, Install it."
-    echo "INFO:"
-    echo "https://www.tecmint.com/install-zip-and-unzip-in-linux/"
-    echo "https://linux.die.net/man/1/zip"
-fi
+chmod +x trash.sh
 
-alies trash = 'bash temp.sh'
+alias trash='source trash.sh'
 
 #step2:write a script which will compress the files and moves it to Trash folder
 #step3:use alies to convert the bash script cmd to trash cmd
